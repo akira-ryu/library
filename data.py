@@ -1,0 +1,2 @@
+#global variable's
+books = {}

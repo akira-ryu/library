@@ -1,0 +1,7 @@
+1.Exception handling
+(change all the if else code to configure try-catch)
+• Proper use of try and except
+• Handle file does not exist
+• Validate data loaded from the file
+• Handle file cannot be saved
+
