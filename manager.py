@@ -20,8 +20,20 @@ def load_state():
     except PermissionError:
         print("Error: Permission denied when accessing the file.")
     except Exception as e:
-     print(f"An unexpected error occurred: {e}")  
+        print(f"An unexpected error occurred: {e}")  
 
             
-        
+def update_state():
+    try:
+        with open('state/books.csv', 'w', newline='') as csvfile:
+            fieldnames = ['Title','Author','Year','ISBN']
+            #use of this is mentioned in the readme.txt
+            #were to and how to details are given in that file
+            writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+            writer.writeheader()
+            for title, details in data.books.items():
+                writer.writerow({'Title': title, 'Author': details['author'], 
+                                 'Year': details['year'], 'ISBN': details['isbn']})
+    except Exception as ex:
+        print(ex)
 

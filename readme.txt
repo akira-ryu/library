@@ -15,10 +15,11 @@ https://www.learnpython.org/en/Modules_and_Packages
 #usage : to seprate the application into 3 layes with a helper class
        : also to avoid 1000's of line in single source file
 
-[DictReader]
+[DictReader](using both DictRead and DictWrite)
 #usage : an Object based way of serializing the data from a local saved
        : used to read from the csv and store it in books library
 https://docs.python.org/3/library/csv.html#csv.QUOTE_NONNUMERIC:~:text=class%20csv.-,DictReader,-(f%2C
+https://docs.python.org/3/library/csv.html#csv.DictWriter:~:text=class%20csv.-,DictWriter,-(f%2C
 
     FS(File structure explained)
 Library.py : 

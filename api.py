@@ -1,4 +1,4 @@
-import helper, data
+import helper, data, manager
 
 #1. add-fucntion (to add a book to the dicts)
 def add_book():
@@ -236,6 +236,7 @@ def quit_application():
     _char = input('Are you sure you want to exit? (Y/N):')
     
     if _char == 'y' or _char == 'Y':
+        manager.update_state()
         print()
         print('Thank you for using the library....')
         print()
